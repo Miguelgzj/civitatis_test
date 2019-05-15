@@ -14,10 +14,8 @@ BCMath PHP Extension
 
 Además habrá que tener instalado npm y composer.
 
-Para poder iniciar el proyecto hay que crear una base de datos y rellenar los datos de acceso a la misma en el
-archivo .env alojado en la raiz del proyecto.
-
-Por ejemplo:
+Para poder iniciar el proyecto hay que crear una base de datos y rellenar los datos de acceso a la misma creando un fichero
+.env en la raiz del proyecto haciendo uso del archivo .env.example como referencia y modificando los siguientes valores.
 
 DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
