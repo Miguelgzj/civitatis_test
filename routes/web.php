@@ -12,9 +12,8 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('app');
 });
 
-Route::get('/hola', function () {
-    return view('welcome');
-});
+Route::post('/activities', 'ActivitiesController@getActivities');
+Route::post('/book', 'BookingsController@book');

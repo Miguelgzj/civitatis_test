@@ -1,0 +1,30 @@
+
+
+.search-item{
+  padding-bottom: 20px;
+
+  .search-item__container{
+    background-color: white;
+    border-radius: 20px;
+    padding:20px;
+  }
+  .search-item__price{
+    text-align: center;
+  }
+  .search-item__success{
+    margin-top:20px;
+    color: #2fa360;
+  }
+
+  .btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited, .btn-primary:focus {
+    box-shadow: none;
+    font-size: 20px;
+    background-color: #f70759;
+    border-color: #f70759;
+  }
+
+  p{
+    font-size: 16px;
+  }
+
+}

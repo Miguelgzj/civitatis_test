@@ -10662,3 +10662,65 @@ a.text-dark:focus {
   }
 }
 
+.search-container {
+  padding-top: 10vh;
+}
+
+.search-container h2 {
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: white;
+}
+
+.search-container .search-container__form {
+  background-color: #f70759;
+  min-height: 400px;
+  border-radius: 20px;
+  color: white;
+}
+
+.search-container label {
+  font-size: 16px;
+}
+
+.search-container button {
+  font-size: 16px;
+  margin-top: 15px;
+  width: 100%;
+}
+
+.search-item {
+  padding-bottom: 20px;
+}
+
+.search-item .search-item__container {
+  background-color: white;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.search-item .search-item__price {
+  text-align: center;
+}
+
+.search-item .search-item__success {
+  margin-top: 20px;
+  color: #2fa360;
+}
+
+.search-item .btn-primary,
+.search-item .btn-primary:hover,
+.search-item .btn-primary:active,
+.search-item .btn-primary:visited,
+.search-item .btn-primary:focus {
+  box-shadow: none;
+  font-size: 20px;
+  background-color: #f70759;
+  border-color: #f70759;
+}
+
+.search-item p {
+  font-size: 16px;
+}
+

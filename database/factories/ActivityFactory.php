@@ -1,7 +1,7 @@
 <?php
 
 /** @var \Illuminate\Database\Eloquent\Factory $factory */
-use App\User;
+use App\Activity;
 use Illuminate\Support\Str;
 use Faker\Generator as Faker;
 
@@ -16,12 +16,14 @@ use Faker\Generator as Faker;
 |
 */
 
-$factory->define(User::class, function (Faker $faker) {
+$factory->define(Activity::class, function (Faker $faker) {
     return [
-        'name' => $faker->name,
-        'email' => $faker->unique()->safeEmail,
-        'email_verified_at' => now(),
-        'password' => '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', // password
-        'remember_token' => Str::random(10),
+        'title' => $faker->text(40),
+        'description' => $faker->text(150),
+        'start_at' => $faker->dateTimeBetween('-10 days', '+15 days'),
+        'finish_at' => $faker->dateTimeBetween('+15 days', '+30 days'),
+        'price' => $faker->numberBetween(5,100),
+        'popularity'=> $faker->numberBetween(0, 1000)
     ];
 });
+
